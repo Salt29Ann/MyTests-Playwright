@@ -2,23 +2,24 @@ import { defineConfig, devices } from '@playwright/test';
 
 
 const commonConfig = {
-  screenshot: 'MyTests/screenshots',
-  reporter: 'list',
   reporterOptions: {
-    outputDir: './MyTests/reports',
+  outputDir: 'MyTests/reports',
+  screenshot: 'MyTests/screenshots',
+  reporter: [ ['html', { outputFolder: 'reports' }], ['dot'], ['line'], ['list'] ],
   },
 };
 
 export default defineConfig({
-  testDir: './Test',
+  testDir: './tests-examples',
   // testIgnore: '*example.*ts',
-  testMatch: '*example.*ts', /* Run tests in files in parallel */
+  // testMatch: '*example.*ts', /* Run tests in files in parallel */
   fullyParallel: true, /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI, /* Retry on CI only */
   retries: process.env.CI ? 2 : 0, /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3 : undefined,
+  // workers: process.env.CI ? 3 : undefined,
+  workers: 3, /* set up of workers doesn't matter which CI*/
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [ ['html'], ['dot'], ['line'] ],
+  // reporter: [ ['html'], ['dot'], ['line'], ['list'] ],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {

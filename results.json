@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -53,7 +53,7 @@
         "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/*.test.js"
+          "*spec.ts"
         ],
         "timeout": 30000
       },
@@ -66,7 +66,7 @@
         "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/*.test.js"
+          "*spec.ts"
         ],
         "timeout": 30000
       },
@@ -79,7 +79,7 @@
         "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/*.test.js"
+          "*spec.ts"
         ],
         "timeout": 30000
       }
@@ -87,570 +87,245 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.43.0",
-    "workers": 4,
+    "workers": 5,
     "webServer": null
   },
   "suites": [
     {
-      "title": "HW_12/HWfile.test.js",
-      "file": "HW_12/HWfile.test.js",
+      "title": "HW_19/HWfile.spec.ts",
+      "file": "HW_19/HWfile.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "User successful registration",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Verification of qauto app",
+          "file": "HW_19/HWfile.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Registration form with valid user data",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 5632,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:4:16",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 16,
-                      "line": 4
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 16,
-                        "line": 4
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30342,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
-                      "message": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:4:16\u001b[22m"
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "PageLoadTime: 21.718s\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:19:49.495Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_19-HWfile-Verification--17bfc-n-form-with-valid-user-data-firefox/test-failed-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:20.295Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-successful-registration-chromium/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 16,
-                    "line": 4
-                  }
+                  "status": "unexpected"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-e6e52fbda1107a106770",
-          "file": "HW_12/HWfile.test.js",
-          "line": 16,
-          "column": 5
-        },
-        {
-          "title": "User registration with an empty name",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "765e71f77832bced86e5-11307565866eff464a55",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 14,
+              "column": 7
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "User with this Email already registered",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 5589,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:4:16",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 16,
-                      "line": 4
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 16,
-                        "line": 4
-                      },
-                      "message": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:4:16\u001b[22m"
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.522Z",
+                      "attachments": []
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:19.927Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-registration-with-an-empty-name-chromium/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 16,
-                    "line": 4
-                  }
+                  "status": "skipped"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-7b16206d25e9e3d327ed",
-          "file": "HW_12/HWfile.test.js",
-          "line": 32,
-          "column": 5
-        },
-        {
-          "title": "User with this Email already registered",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "765e71f77832bced86e5-3eb931dcf056846b4536",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 23,
+              "column": 7
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Registration form with non-matching passwords",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 5605,
-                  "error": {
-                    "message": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:4:16",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 16,
-                      "line": 4
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 16,
-                        "line": 4
-                      },
-                      "message": "Error: page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://qauto.forstudy.space/\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:4:16\u001b[22m"
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.522Z",
+                      "attachments": []
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:20.155Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-with-this-Email-already-registered-chromium/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 16,
-                    "line": 4
-                  }
+                  "status": "skipped"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-46ecc880e1abdd4c9e5d",
-          "file": "HW_12/HWfile.test.js",
-          "line": 47,
-          "column": 7
-        },
-        {
-          "title": "User successful registration",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "765e71f77832bced86e5-d2d9e6e83e5788c5b579",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 36,
+              "column": 5
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
+              "title": "Registration form with invalid Last name",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 23506,
-                  "error": {
-                    "message": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\u001b[2m  -   locator resolved to <button _ngcontent-ghv-c55=\"\" class=\"btn btn-outline-whi…>Sign In</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n",
-                    "stack": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\u001b[2m  -   locator resolved to <button _ngcontent-ghv-c55=\"\" class=\"btn btn-outline-whi…>Sign In</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:17:14",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 14,
-                      "line": 17
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m test (\u001b[32m'User successful registration'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page\u001b[33m,\u001b[39m context}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.header_right > .btn'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h4.modal-title'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.modal-footer > .btn-link'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'div.modal-body'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 14,
-                        "line": 17
-                      },
-                      "message": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\u001b[2m  -   locator resolved to <button _ngcontent-ghv-c55=\"\" class=\"btn btn-outline-whi…>Sign In</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m test (\u001b[32m'User successful registration'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page\u001b[33m,\u001b[39m context}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.header_right > .btn'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h4.modal-title'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.modal-footer > .btn-link'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'div.modal-body'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:17:14\u001b[22m"
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.523Z",
+                      "attachments": []
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:19.935Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-successful-registration-firefox/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 14,
-                    "line": 17
-                  }
+                  "status": "skipped"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-301e2aa7e276d7d42b38",
-          "file": "HW_12/HWfile.test.js",
-          "line": 16,
-          "column": 5
-        },
-        {
-          "title": "User registration with an empty name",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "765e71f77832bced86e5-41d843102539d03e1a80",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 44,
+              "column": 5
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
+              "title": "Registration form with invalid user name",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 4,
-                  "status": "failed",
-                  "duration": 27232,
-                  "error": {
-                    "message": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n",
-                    "stack": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:33:14",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 14,
-                      "line": 33
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m test(\u001b[32m'User registration with an empty name'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page\u001b[33m,\u001b[39m context}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.header_right > .btn'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h4.modal-title'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.modal-footer > .btn-link'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'div.modal-body'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 14,
-                        "line": 33
-                      },
-                      "message": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m test(\u001b[32m'User registration with an empty name'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page\u001b[33m,\u001b[39m context}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.header_right > .btn'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h4.modal-title'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.modal-footer > .btn-link'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'div.modal-body'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:33:14\u001b[22m"
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.523Z",
+                      "attachments": []
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:33.724Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-registration-with-an-empty-name-firefox/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 14,
-                    "line": 33
-                  }
+                  "status": "skipped"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-465af8d38275807576bc",
-          "file": "HW_12/HWfile.test.js",
-          "line": 32,
-          "column": 5
-        },
-        {
-          "title": "User with this Email already registered",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "765e71f77832bced86e5-e3f5f65ca760801d8efb",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 52,
+              "column": 5
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
+              "title": "Registration form with invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 5,
-                  "status": "failed",
-                  "duration": 25153,
-                  "error": {
-                    "message": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n",
-                    "stack": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:48:14",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 14,
-                      "line": 48
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m   test(\u001b[32m'User with this Email already registered'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page\u001b[33m,\u001b[39m context}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.header_right > .btn'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h4.modal-title'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.modal-footer > .btn-link'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'div.modal-body'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 14,
-                        "line": 48
-                      },
-                      "message": "TimeoutError: page.click: Timeout 2000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.header_right > .btn')\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m   test(\u001b[32m'User with this Email already registered'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page\u001b[33m,\u001b[39m context}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.header_right > .btn'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'h4.modal-title'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'.modal-footer > .btn-link'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'div.modal-body'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:48:14\u001b[22m"
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.524Z",
+                      "attachments": []
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:33.632Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-with-this-Email-already-registered-firefox/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 14,
-                    "line": 48
-                  }
+                  "status": "skipped"
                 }
               ],
-              "status": "unexpected"
+              "id": "765e71f77832bced86e5-ce2d96ce056e8a94cb27",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 59,
+              "column": 5
             }
-          ],
-          "id": "7e2f47ab513b1318314e-22e775ae5eae3bf20329",
-          "file": "HW_12/HWfile.test.js",
-          "line": 47,
-          "column": 7
-        },
-        {
-          "title": "User successful registration",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "status": "failed",
-                  "duration": 26663,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"/panel/garage\"\u001b[39m\nReceived string:    \u001b[31m\"https://qauto.forstudy.space/\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"/panel/garage\"\u001b[39m\nReceived string:    \u001b[31m\"https://qauto.forstudy.space/\"\u001b[39m\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:28:22",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 22,
-                      "line": 28
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button.btn.btn-primary:has-text(\"Register\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m   expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoContain(\u001b[32m'/panel/garage'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'User regestered in the system'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 22,
-                        "line": 28
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"/panel/garage\"\u001b[39m\nReceived string:    \u001b[31m\"https://qauto.forstudy.space/\"\u001b[39m\n\n\u001b[0m \u001b[90m 26 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button.btn.btn-primary:has-text(\"Register\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m   expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoContain(\u001b[32m'/panel/garage'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'User regestered in the system'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:28:22\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:34.431Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-successful-registration-webkit/test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 22,
-                    "line": 28
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-b3c376b80397a0bcbd36",
-          "file": "HW_12/HWfile.test.js",
-          "line": 16,
-          "column": 5
-        },
-        {
-          "title": "User registration with an empty name",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 7,
-                  "status": "timedOut",
-                  "duration": 30439,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 14,
-                        "line": 42
-                      },
-                      "message": "Error: page.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('button.btn.btn-primary:has-text(\"Register\")')\u001b[22m\n\u001b[2m  -   locator resolved to <button disabled type=\"button\" _ngcontent-esq-c48=\"\" cla…>Register</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #1\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #2\u001b[22m\n\u001b[2m  -   waiting 20ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #3\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #4\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #5\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #6\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #7\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #8\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #9\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #10\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #11\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #12\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #13\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #14\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #15\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #16\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #17\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #18\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #19\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #20\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #21\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #22\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #23\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #24\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #25\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #26\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #27\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m  -   element is not enabled\u001b[22m\n\u001b[2m  - retrying click action, attempt #28\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible, enabled and stable\u001b[22m\n\n\n\u001b[0m \u001b[90m 40 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[id=\"signupPassword\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Pass0000'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[id=\"signupRepeatPassword\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Pass0000'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button.btn.btn-primary:has-text(\"Register\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m   \u001b[36mconst\u001b[39m nameError \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'.error'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mtextContent)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'Error when name field is empty:'\u001b[39m\u001b[33m,\u001b[39m nameError)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:42:14\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:24:49.643Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_12-HWfile-User-registration-with-an-empty-name-webkit/test-failed-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-1d9d01831f028469a1f1",
-          "file": "HW_12/HWfile.test.js",
-          "line": 32,
-          "column": 5
-        },
-        {
-          "title": "User with this Email already registered",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 8,
-                  "status": "timedOut",
-                  "duration": 35091,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:3:11",
-                    "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                      "column": 11,
-                      "line": 3
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mimport\u001b[39m { test\u001b[33m,\u001b[39m expect\u001b[33m,\u001b[39m beforeEach\u001b[33m,\u001b[39m afterEach } \u001b[36mfrom\u001b[39m \u001b[32m'@playwright/test'\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                        "column": 11,
-                        "line": 3
-                      },
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 1 |\u001b[39m \u001b[36mimport\u001b[39m { test\u001b[33m,\u001b[39m expect\u001b[33m,\u001b[39m beforeEach\u001b[33m,\u001b[39m afterEach } \u001b[36mfrom\u001b[39m \u001b[32m'@playwright/test'\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 2 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 |\u001b[39m beforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m   |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://qauto.forstudy.space'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'load'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39msetHTTPCredentials({ username\u001b[33m:\u001b[39m \u001b[32m'guest'\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m'welcome2qauto'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js:3:11\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-08T09:25:06.240Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_12/HWfile.test.js",
-                    "column": 11,
-                    "line": 3
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "7e2f47ab513b1318314e-09f72cfc118c28fab6f6",
-          "file": "HW_12/HWfile.test.js",
-          "line": 47,
-          "column": 7
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-08T09:24:18.208Z",
-    "duration": 83897.83200000001,
+    "startTime": "2024-04-14T20:19:48.539Z",
+    "duration": 35008.225000000006,
     "expected": 0,
-    "skipped": 0,
-    "unexpected": 9,
+    "skipped": 5,
+    "unexpected": 1,
     "flaky": 0
   }
 }

@@ -13,7 +13,7 @@ test.describe("Verification of qauto app", () => {
 
   test('Registration form with valid user data', async ({page}) => {
     const userPage = new LoginPage(page);
-    await userPage.fillRegistrationForm('Sarah', 'Johns', 'sarahEmail2@example.com', '1Qwerty23');
+    await userPage.fillRegistrationForm('Sarah', 'Johns', 'sarahJohnsEmail@example.com', '1Qwerty23');
     const bRegister = await userPage.buttonRegister();
     await expect(bRegister).toBeVisible();
     await bRegister.click();

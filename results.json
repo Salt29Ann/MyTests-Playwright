@@ -1,0 +1,331 @@
+{
+  "config": {
+    "configFile": "/Users/macuser/Desktop/QA Automation/Playwright Project/playwright.config.ts",
+    "rootDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "*spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "*spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "*spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.43.0",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "HW_19/HWfile.spec.ts",
+      "file": "HW_19/HWfile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verification of qauto app",
+          "file": "HW_19/HWfile.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Registration form with valid user data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30342,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "PageLoadTime: 21.718s\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:19:49.495Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_19-HWfile-Verification--17bfc-n-form-with-valid-user-data-firefox/test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "765e71f77832bced86e5-11307565866eff464a55",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "User with this Email already registered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.522Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "765e71f77832bced86e5-3eb931dcf056846b4536",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Registration form with non-matching passwords",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.522Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "765e71f77832bced86e5-d2d9e6e83e5788c5b579",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 36,
+              "column": 5
+            },
+            {
+              "title": "Registration form with invalid Last name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.523Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "765e71f77832bced86e5-41d843102539d03e1a80",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 44,
+              "column": 5
+            },
+            {
+              "title": "Registration form with invalid user name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.523Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "765e71f77832bced86e5-e3f5f65ca760801d8efb",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 52,
+              "column": 5
+            },
+            {
+              "title": "Registration form with invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-14T20:20:23.524Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "765e71f77832bced86e5-ce2d96ce056e8a94cb27",
+              "file": "HW_19/HWfile.spec.ts",
+              "line": 59,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-04-14T20:19:48.539Z",
+    "duration": 35008.225000000006,
+    "expected": 0,
+    "skipped": 5,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

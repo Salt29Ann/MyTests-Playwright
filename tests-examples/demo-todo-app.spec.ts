@@ -4,6 +4,15 @@ test.beforeEach(async ({ page }) => {
   await page.goto('https://demo.playwright.dev/todomvc');
 });
 
+test.afterEach(async ({page}) => {
+  console.log(`${page.title}`);
+});
+
+test.afterAll(() => {
+  console.log("message after all tests")
+})
+
+
 const TODO_ITEMS = [
   'buy some cheese',
   'feed the cat',

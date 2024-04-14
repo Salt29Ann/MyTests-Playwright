@@ -1,29 +1,26 @@
 import { defineConfig, devices } from '@playwright/test';
 
 
-const commonConfig = {
-  screenshot: 'MyTests/screenshots',
-  reporter: 'list',
-  reporterOptions: {
-    outputDir: './MyTests/reports',
-  },
-};
-
 export default defineConfig({
-  testDir: './Test',
+  testDir: './Homework_playwright', // './tests-examples', 
   // testIgnore: '*example.*ts',
-  testMatch: '*example.*ts', /* Run tests in files in parallel */
+  testMatch: '*spec.ts', //'**/*.spec.ts',/* Run tests in files in parallel */ /*["demo-todo-app.spec.ts", "example.spec.ts"]
   fullyParallel: true, /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI, /* Retry on CI only */
   retries: process.env.CI ? 2 : 0, /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [ ['html'], ['dot'], ['line'] ],
+  // workers: process.env.CI ? 3 : undefined,
+  workers: 4, /* set up of workers doesn't matter which CI*/
+  reporter: [ ['html'], ['dot'], ['line'], ['list'], ['json', { outputFile: 'results.json' }] ],
 
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    // baseURL: 'http://127.0.0.1:3000',
+    baseURL: "https://qauto.forstudy.space",
+    httpCredentials: {
+      username: "guest",
+      password: "welcome2qauto",
+    },
+    ignoreHTTPSErrors: true,
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
     launchOptions: {
       headless: false,
       slowMo: 100
@@ -71,7 +68,6 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
   ],
-  ...commonConfig,
   /* Run your local dev server before starting the tests */
   // webServer: {
   //   command: 'npm run start',
@@ -79,3 +75,8 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+
+// locale: 'de-DE',
+//     timezoneId: 'Europe/Berlin',
+//        // permissions: ['geolocation'],
+//     // geolocation: { longitude: 52.150002, latitude: 10.333333 },

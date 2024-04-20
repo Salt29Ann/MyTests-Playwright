@@ -1,7 +1,9 @@
     import { test, expect } from "@playwright/test";
 
 
-test.describe("Verification of qauto app", () => {
+test.describe("Verification of qauto app", 
+{ tag: ['@qauto', '@regression', '@add_car']},
+() => {
   test.describe.configure({ mode: "serial" });
 
   // test.afterAll(async ({ page }) => {
@@ -9,8 +11,8 @@ test.describe("Verification of qauto app", () => {
   //   // await browser.close();
   // });
 
-const loginName = "annaSATest@gmail.com";
-const loginPass = "Anna21Anna";
+const loginName = process.env.LOGIN_USER_NAME;
+const loginPass = process.env.LOGIN_PASS;
 
 test.skip("open main page", async ({ page }) => {
   await page.goto("/");
@@ -68,9 +70,11 @@ test.skip("open main page", async ({ page }) => {
     await expect(textOnGaragePage).toContainText('Garage');
   });
 
-  test('usage few selectors', async ({ page }) =>{
-    await page.goto("/");
-    // await page.waitForTimeout(3000);
+  test('usage few selectors', 
+  {tag: '@contain_screenshot'}, 
+  async ({ page }) => {
+    await page.goto("/", { timeout: 50000 });
+    // await page.waitForLoadState('load');
     await page.getByRole("button", { name: "Sign In" }).click();
     await page.locator('input[name="email"]').fill(loginName);
     await page.locator('input[name="password"]').fill(loginPass);
@@ -78,6 +82,7 @@ test.skip("open main page", async ({ page }) => {
     await page.waitForURL('panel/garage', { timeout: 10000 });
     // await expect(page.locator('.panel-page h1')).toHaveScreenshot('main-page.png');
     await expect(page).toHaveScreenshot('main-page.png'); // whole page
+    await page.pause();  // stop page to review in debug
  
     const buttonLocator = page.locator('button')
     await buttonLocator.filter({ hasText: 'Login'}).click();

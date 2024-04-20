@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "/Users/macuser/Desktop/QA Automation/Playwright Project/playwright.config.ts",
-    "rootDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+    "rootDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -50,7 +50,7 @@
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples",
         "testIgnore": [],
         "testMatch": [
           "*spec.ts"
@@ -63,7 +63,7 @@
         "retries": 0,
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples",
         "testIgnore": [],
         "testMatch": [
           "*spec.ts"
@@ -76,7 +76,7 @@
         "retries": 0,
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright",
+        "testDir": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples",
         "testIgnore": [],
         "testMatch": [
           "*spec.ts"
@@ -87,39 +87,284 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.43.0",
-    "workers": 5,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "HW_19/HWfile.spec.ts",
-      "file": "HW_19/HWfile.spec.ts",
+      "title": "classwork_21/qa_auto.spec.ts",
+      "file": "classwork_21/qa_auto.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Verification of qauto app",
-          "file": "HW_19/HWfile.spec.ts",
-          "line": 11,
+          "file": "classwork_21/qa_auto.spec.ts",
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "Registration form with valid user data",
+              "title": "open main page",
+              "ok": true,
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-20T12:54:11.138Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8098dcccc031037d6345-39909c9238648394d09e",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 17,
+              "column": 6
+            },
+            {
+              "title": "usage of getByRole",
+              "ok": true,
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-20T12:54:11.139Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8098dcccc031037d6345-d30d61ae2be4be7638ae",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 26,
+              "column": 8
+            },
+            {
+              "title": "usage of getByText",
+              "ok": true,
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-20T12:54:11.139Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8098dcccc031037d6345-5fc2893976b10ae1eac4",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 31,
+              "column": 8
+            },
+            {
+              "title": "usage of getByLabel",
+              "ok": true,
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-20T12:54:11.140Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8098dcccc031037d6345-35ced295e7e21ad76e70",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 37,
+              "column": 8
+            },
+            {
+              "title": "usage of fill method",
+              "ok": true,
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-20T12:54:11.140Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8098dcccc031037d6345-000545b3988586204e26",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 42,
+              "column": 8
+            },
+            {
+              "title": "usage of fill method and soft assert for pass",
+              "ok": true,
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-20T12:54:11.140Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8098dcccc031037d6345-d0a3539dff5aff2f287f",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 50,
+              "column": 8
+            },
+            {
+              "title": "usage few selectors",
               "ok": false,
-              "tags": [],
+              "tags": [
+                "qauto",
+                "regression",
+                "add_car",
+                "contain_screenshot"
+              ],
               "tests": [
                 {
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "status": "timedOut",
-                      "duration": 31860,
+                      "duration": 35091,
                       "error": {
                         "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
                         "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
@@ -130,197 +375,27 @@
                         },
                         {
                           "location": {
-                            "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_19/HWfile.spec.ts",
+                            "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/classwork_21/qa_auto.spec.ts",
                             "column": 16,
-                            "line": 20
+                            "line": 76
                           },
-                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"panel/garage\" until \"load\"\n============================================================\n\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(bRegister)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m bRegister\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[32m'panel/garage'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m   test(\u001b[32m'User with this Email already registered'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/Homework_playwright/HW_19/HWfile.spec.ts:20:16\u001b[22m"
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 74 |\u001b[39m   {tag\u001b[33m:\u001b[39m \u001b[32m'@contain_screenshot'\u001b[39m}\u001b[33m,\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"/\"\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m50000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m     \u001b[90m// await page.waitForLoadState('load');\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Sign In\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 79 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[name=\"email\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(loginName)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/classwork_21/qa_auto.spec.ts:76:16\u001b[22m"
                         }
                       ],
-                      "stdout": [
-                        {
-                          "text": "PageLoadTime: 25.128s\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-04-14T20:46:51.222Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_19-HWfile-Verification--17bfc-n-form-with-valid-user-data-firefox/test-failed-1.png"
-                        }
-                      ]
+                      "startTime": "2024-04-20T12:54:11.140Z",
+                      "attachments": []
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "765e71f77832bced86e5-11307565866eff464a55",
-              "file": "HW_19/HWfile.spec.ts",
-              "line": 14,
+              "id": "8098dcccc031037d6345-0c13980eb50080686ec4",
+              "file": "classwork_21/qa_auto.spec.ts",
+              "line": 73,
               "column": 7
-            },
-            {
-              "title": "User with this Email already registered",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-14T20:47:25.642Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "765e71f77832bced86e5-3eb931dcf056846b4536",
-              "file": "HW_19/HWfile.spec.ts",
-              "line": 23,
-              "column": 7
-            },
-            {
-              "title": "Registration form with non-matching passwords",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-14T20:47:25.643Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "765e71f77832bced86e5-d2d9e6e83e5788c5b579",
-              "file": "HW_19/HWfile.spec.ts",
-              "line": 37,
-              "column": 5
-            },
-            {
-              "title": "Registration form with invalid Last name",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-14T20:47:25.643Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "765e71f77832bced86e5-41d843102539d03e1a80",
-              "file": "HW_19/HWfile.spec.ts",
-              "line": 45,
-              "column": 5
-            },
-            {
-              "title": "Registration form with invalid user name",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-14T20:47:25.644Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "765e71f77832bced86e5-e3f5f65ca760801d8efb",
-              "file": "HW_19/HWfile.spec.ts",
-              "line": 53,
-              "column": 5
-            },
-            {
-              "title": "Registration form with invalid password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-14T20:47:25.644Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "765e71f77832bced86e5-ce2d96ce056e8a94cb27",
-              "file": "HW_19/HWfile.spec.ts",
-              "line": 60,
-              "column": 5
             }
           ]
         }
@@ -329,10 +404,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-14T20:46:50.571Z",
-    "duration": 35124.354999999996,
+    "startTime": "2024-04-20T12:54:10.349Z",
+    "duration": 38485.908,
     "expected": 0,
-    "skipped": 5,
+    "skipped": 6,
     "unexpected": 1,
     "flaky": 0
   }

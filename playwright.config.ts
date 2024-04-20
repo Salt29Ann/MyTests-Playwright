@@ -1,22 +1,26 @@
 import { defineConfig, devices } from '@playwright/test';
+import { configDotenv } from 'dotenv';
+
+configDotenv({path: `env/.env.${process.env.ENV}`});
 
 
 export default defineConfig({
-  testDir: './Homework_playwright', // './tests-examples', 
+  testDir: './tests-examples', //'./Homework_playwright',
   // testIgnore: '*example.*ts',
   testMatch: '*spec.ts', //'**/*.spec.ts',/* Run tests in files in parallel */ /*["demo-todo-app.spec.ts", "example.spec.ts"]
   fullyParallel: true, /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI, /* Retry on CI only */
   retries: process.env.CI ? 2 : 0, /* Opt out of parallel tests on CI. */
-  // workers: process.env.CI ? 3 : undefined,
-  workers: 4, /* set up of workers doesn't matter which CI*/
+  workers: process.env.CI ? 3 : undefined,
+  // workers: 4, /* set up of workers doesn't matter which CI*/
   reporter: [ ['html'], ['dot'], ['line'], ['list'], ['json', { outputFile: 'results.json' }] ],
 
   use: {
-    baseURL: "https://qauto.forstudy.space",
+    // baseURL: "https://qauto.forstudy.space",
+    baseURL: process.env.ENV_URL,
     httpCredentials: {
-      username: "guest",
-      password: "welcome2qauto",
+      username: process.env.HTTP_CREDENTIALS_USERNAME,  //"guest",
+      password: process.env.HTTP_CREDENTIALS_PASSWORD,  //"welcome2qauto",
     },
     ignoreHTTPSErrors: true,
     trace: 'on-first-retry',
@@ -25,10 +29,13 @@ export default defineConfig({
       headless: false,
       slowMo: 100
     },
-    contextOptions: {
-      acceptDownloads: false,
-      permissions: ['geolocation']
-    }
+    // contextOptions: {
+    //   acceptDownloads: false,
+    //   permissions: ['geolocation']
+    // }
+    // locale: 'de-DE',
+    // timezoneId: 'Europe/Berlin',
+    // permissions: ['geolocation'],
   },
 
   /* Configure projects for major browsers */

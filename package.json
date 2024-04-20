@@ -14,5 +14,9 @@
     "@playwright/test": "^1.43.0",
     "@types/node": "^20.12.2",
     "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
   }
 }

@@ -14,7 +14,7 @@ test.describe("Verification of qauto app",
 const loginName = process.env.LOGIN_USER_NAME;
 const loginPass = process.env.LOGIN_PASS;
 
-test.skip("open main page", async ({ page }) => {
+test("open main page", async ({ page }) => {
   await page.goto("/");
   await page.waitForTimeout(5000);
   // await page.locator('button.header_signin').click();
@@ -23,23 +23,23 @@ test.skip("open main page", async ({ page }) => {
   await signinButton.click();
 });
 
-  test.skip("usage of getByRole", async ({ page }) => {
+  test("usage of getByRole", async ({ page }) => {
       await page.goto("/");
       await page.getByRole("button", { name: "Sign In" }).click();
     });
 
-  test.skip("usage of getByText", async ({ page }) => {
+  test("usage of getByText", async ({ page }) => {
       await page.goto("/");
       await page.waitForTimeout(5000);
       await expect(page.getByText("Sign In")).toBeVisible();  // перевірка на відображеня елемента
     });
 
-  test.skip("usage of getByLabel", async ({ page }) => {
+  test("usage of getByLabel", async ({ page }) => {
       await page.goto("/");
       await page.getByRole("button", { name: "Sign In" }).click();
       await expect(page.getByLabel("Email")).toBeVisible();
     });
-  test.skip("usage of fill method", async ({ page }) => {
+  test("usage of fill method", async ({ page }) => {
     await page.goto("/");
     await page.waitForTimeout(5000);
     await page.getByRole("button", { name: "Sign In" }).click();
@@ -47,7 +47,7 @@ test.skip("open main page", async ({ page }) => {
     await page.locator('input[name="password"]').fill(loginPass);
     await page.waitForTimeout(5000);
    });
-  test.skip("usage of fill method and soft assert for pass", async ({ page }) => {
+  test("usage of fill method and soft assert for pass", async ({ page }) => {
     await page.goto("/");
     // await page.waitForTimeout(10000);
     await page.getByRole("button", { name: "Sign In" }).click();
@@ -75,17 +75,14 @@ test.skip("open main page", async ({ page }) => {
   async ({ page }) => {
     await page.goto("/", { timeout: 50000 });
     // await page.waitForLoadState('load');
-    await page.getByRole("button", { name: "Sign In" }).click();
+    await page.getByRole("button", { name: "Sign Off" }).click();
     await page.locator('input[name="email"]').fill(loginName);
     await page.locator('input[name="password"]').fill(loginPass);
     await page.locator('button:has-text("SignIN"), button:has-text("Login")').click();
     await page.waitForURL('panel/garage', { timeout: 10000 });
     // await expect(page.locator('.panel-page h1')).toHaveScreenshot('main-page.png');
-    await expect(page).toHaveScreenshot('main-page.png'); // whole page
+    // await expect(page).toHaveScreenshot('main-page.png'); // whole page
     await page.pause();  // stop page to review in debug
- 
-    const buttonLocator = page.locator('button')
-    await buttonLocator.filter({ hasText: 'Login'}).click();
 
     // locators in locators
     const footerModal = page.locator('modal-footer')

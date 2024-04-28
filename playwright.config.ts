@@ -13,7 +13,17 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0, /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 3 : undefined,
   // workers: 4, /* set up of workers doesn't matter which CI*/
-  reporter: [ ['html'], ['dot'], ['line'], ['list'], ['json', { outputFile: 'results.json' }] ],
+  reporter: [ 
+    ['html', {open: 'never'}], 
+    ['dot'], 
+    ['line'], 
+    ['list'], 
+    ['json', { outputFile: 'results.json' }],   
+    ['@testomatio/reporter/lib/adapter/playwright.js',
+    {
+      apiKey: process.env.TESTOMAT,
+    },
+  ], ],
 
   use: {
     // baseURL: "https://qauto.forstudy.space",
@@ -23,8 +33,9 @@ export default defineConfig({
       password: process.env.HTTP_CREDENTIALS_PASSWORD,  //"welcome2qauto",
     },
     ignoreHTTPSErrors: true,
-    trace: 'on-first-retry',
+    trace: 'retain-on-first-failure', //'on-first-retry',
     screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
     launchOptions: {
       headless: false,
       slowMo: 100

@@ -22,8 +22,9 @@ export default defineConfig({
     ['@testomatio/reporter/lib/adapter/playwright.js',
     {
       apiKey: process.env.TESTOMAT,
-    },
-  ], ],
+    },], 
+    ['./myReporter.ts'],
+  ],
 
   use: {
     // baseURL: "https://qauto.forstudy.space",

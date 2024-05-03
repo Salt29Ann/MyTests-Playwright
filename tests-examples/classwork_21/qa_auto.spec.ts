@@ -101,7 +101,7 @@ test("open main page", async ({ page }) => {
   async ({ page }) => {
     await page.goto("/", { timeout: 50000 });
     // await page.waitForLoadState('load');
-    await page.getByRole("button", { name: "Sign In" }).click();
+    await page.getByRole("button", { name: "Sign Off" }).click();
     await page.locator('input[name="email"]').fill(loginName);
     await page.locator('input[name="password"]').fill(loginPass);
     await page.locator('button:has-text("SignIN"), button:has-text("Login")').click();
@@ -109,9 +109,6 @@ test("open main page", async ({ page }) => {
     // await expect(page.locator('.panel-page h1')).toHaveScreenshot('main-page.png');
     // await expect(page).toHaveScreenshot('main-page.png'); // whole page
     await page.pause();  // stop page to review in debug
- 
-    const buttonLocator = page.locator('button')
-    await buttonLocator.filter({ hasText: 'Login'}).click();
 
     // locators in locators
     const footerModal = page.locator('modal-footer')

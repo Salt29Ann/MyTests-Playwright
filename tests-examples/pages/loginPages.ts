@@ -4,18 +4,22 @@ import { Header } from '../components/header';
 export class LoginPage {
     private page: Page;
     signInButton: Locator;
-    // buttonLogin: Locator;
+    buttonLoginForm: Locator;
     inputEmail: Locator;
     inputPass: Locator;
-    header: any;
+    logoInHeader: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.signInButton = page.getByRole('button', { name: 'Sign In' });
         this.inputEmail = page.getByLabel('Email');
         this.inputPass = page.getByLabel('Password');
-        // this.buttonLogin = page.getByRole('button', { name: 'Login' });
-        this.header = new Header(page);
+        this.buttonLoginForm = page.getByRole('button', { name: 'Login' });
+        this.logoInHeader = page.locator('a.header_logo');
+    }
+
+    async openPage() {
+        await this.page.goto("/");
     }
 
     async buttonlogin(): Promise<Locator> {
@@ -23,14 +27,15 @@ export class LoginPage {
     }
 
     async loginwithDefaultParam() {
-        await this.header.logoVisible();
+        await expect(this.logoInHeader).toBeVisible();
         await this.signInButton.click();
         await this.inputEmail.click();
         await this.inputEmail.fill('annaSATest@gmail.com');
         await this.inputPass.click();
         await this.inputPass.fill('Anna21Anna');
-        // await expect(this.buttonLogin).toBeVisible();
-        // await this.buttonLogin.click();
+        await this.page.waitForTimeout(5000);
+        await expect(this.buttonLoginForm).toBeVisible();
+        await this.buttonLoginForm.click();
     }
 
     async loginwithDinamicData(userData: any, passData: any) {

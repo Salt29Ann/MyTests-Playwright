@@ -3,13 +3,13 @@ import { LoginPage } from './pages/loginPages';
 import { Header } from './components/header';
 
 test.beforeEach(async({page})=> {
-  console.time("PageLoadTime");
-  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  // console.time("PageLoadTime");
+  await page.goto('/');
   console.timeEnd("PageLoadTime");
   // const loginpage = new LoginPage(page);
 });
 
-test('test with valid Data', async ({ page }) => {
+test('test with valid Data', {tag:'@codegen' }, async ({ page }) => {
   const loginpage = new LoginPage(page);
   await loginpage.loginwithDefaultParam();
   const bLogin = await loginpage.buttonlogin();

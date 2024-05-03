@@ -15,7 +15,7 @@ export default defineConfig({
   // workers: 4, /* set up of workers doesn't matter which CI*/
   reporter: [ ['html'], ['dot'], ['line'], ['list'], 
   ['json', { outputFile: 'results.json' }],
-  ['./myReporter.ts'],
+  // ['./myOwnReporter.ts'],
 ],
 
   use: {
@@ -43,6 +43,16 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    { name: 'setup', testMatch: /.*\.setup\.ts/ },
+
+    {
+      name: 'chromium-with-setup',
+      use: { ...devices['Desktop Chrome'],
+      storageState: 'playwright/.auth/user.json',
+      },
+      dependencies: ['setup'],
+    },
+
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },

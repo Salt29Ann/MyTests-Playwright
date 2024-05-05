@@ -132,315 +132,126 @@
       "line": 0,
       "specs": [
         {
-          "title": "Verification of qauto app",
-          "file": "classwork_21/qa_auto.spec.ts",
-          "line": 4,
-          "column": 6,
-          "specs": [
+          "title": "authorization",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "open main page",
-              "ok": true,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car"
-              ],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.138Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 21313,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-05T04:28:28.492Z",
+                  "attachments": []
                 }
               ],
-              "id": "8098dcccc031037d6345-39909c9238648394d09e",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 17,
-              "column": 6
-            },
-            {
-              "title": "usage of getByRole",
-              "ok": true,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.139Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "8098dcccc031037d6345-d30d61ae2be4be7638ae",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 26,
-              "column": 8
-            },
-            {
-              "title": "usage of getByText",
-              "ok": true,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.139Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "8098dcccc031037d6345-5fc2893976b10ae1eac4",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 31,
-              "column": 8
-            },
-            {
-              "title": "usage of getByLabel",
-              "ok": true,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.140Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "8098dcccc031037d6345-35ced295e7e21ad76e70",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 37,
-              "column": 8
-            },
-            {
-              "title": "usage of fill method",
-              "ok": true,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.140Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "8098dcccc031037d6345-000545b3988586204e26",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 42,
-              "column": 8
-            },
-            {
-              "title": "usage of fill method and soft assert for pass",
-              "ok": true,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.140Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "8098dcccc031037d6345-d0a3539dff5aff2f287f",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 50,
-              "column": 8
-            },
-            {
-              "title": "usage few selectors",
-              "ok": false,
-              "tags": [
-                "qauto",
-                "regression",
-                "add_car",
-                "contain_screenshot"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "timedOut",
-                      "duration": 35091,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/classwork_21/qa_auto.spec.ts",
-                            "column": 16,
-                            "line": 76
-                          },
-                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 74 |\u001b[39m   {tag\u001b[33m:\u001b[39m \u001b[32m'@contain_screenshot'\u001b[39m}\u001b[33m,\u001b[39m \u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"/\"\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m50000\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m     \u001b[90m// await page.waitForLoadState('load');\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m\"button\"\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m\"Sign In\"\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 79 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[name=\"email\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(loginName)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/classwork_21/qa_auto.spec.ts:76:16\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-04-20T12:54:11.140Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "8098dcccc031037d6345-0c13980eb50080686ec4",
-              "file": "classwork_21/qa_auto.spec.ts",
-              "line": 73,
-              "column": 7
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-fdcf1f07932414ce3029",
+          "file": "auth.setup.ts",
+          "line": 6,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "HW_22/additional_file.spec.ts",
+      "file": "HW_22/additional_file.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create user car",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium-with-setup",
+              "projectName": "chromium-with-setup",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 9740,
+                  "error": {
+                    "message": "Error: GET request to https://qauto.forstudy.space/api/cars failed with status 401",
+                    "stack": "Error: GET request to https://qauto.forstudy.space/api/cars failed with status 401\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:10:11",
+                    "location": {
+                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
+                      "column": 11,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[90m// expect(carsResponse.ok).toBeTruthy();\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcarsResponse\u001b[33m.\u001b[39mok \u001b[33m||\u001b[39m carsResponse\u001b[33m.\u001b[39mstatus \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mconst\u001b[39m pageResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m`${baseURL}/api/cars`\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
+                        "column": 11,
+                        "line": 10
+                      },
+                      "message": "Error: GET request to https://qauto.forstudy.space/api/cars failed with status 401\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[90m// expect(carsResponse.ok).toBeTruthy();\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcarsResponse\u001b[33m.\u001b[39mok \u001b[33m||\u001b[39m carsResponse\u001b[33m.\u001b[39mstatus \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mconst\u001b[39m pageResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m`${baseURL}/api/cars`\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:10:11\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-05-05T04:28:54.107Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-additional_file-Create-user-car-chromium-with-setup/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-additional_file-Create-user-car-chromium-with-setup/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-additional_file-Create-user-car-chromium-with-setup/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
+                    "column": 11,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d3655dd71329e2b2fb02-20a051afb78e77b633a2",
+          "file": "HW_22/additional_file.spec.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-20T12:54:10.349Z",
-    "duration": 38485.908,
-    "expected": 0,
-    "skipped": 6,
+    "startTime": "2024-05-05T04:28:27.070Z",
+    "duration": 38441.837999999996,
+    "expected": 1,
+    "skipped": 0,
     "unexpected": 1,
     "flaky": 0
   }

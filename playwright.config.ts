@@ -23,7 +23,7 @@ export default defineConfig({
     {
       apiKey: process.env.TESTOMAT,
     },], 
-    ['./myReporter.ts'],
+    // ['./myReporter.ts'],
   ],
 
   use: {

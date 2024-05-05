@@ -26,5 +26,5 @@ test('Create user car', async ({ page, baseURL }) => {
 
     expect(pageResponse.status).toBe(200);
     const responseBody = await pageResponse.json();
-    console.log('Page Response:', responseBody);
+    console.log("Page Response:", responseBody);
 });

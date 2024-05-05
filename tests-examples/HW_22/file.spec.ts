@@ -13,7 +13,7 @@ test('User profile', {tag: '@UserProfile'}, async ({page}) => {
 
     // await page.route('**/*.{png,jpg,jpeg}', route => route.abort());
 
-    await page.goto("/panel/profile");
+    await page.goto('/panel/profile');
     await page.waitForSelector('.profile_name');
     await expect(page.getByRole("button", {name: "Edit profile"})).toBeVisible();
 

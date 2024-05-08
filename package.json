@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 3000"
+    "start": "http-server -p 3000",
+    "test": "ENV=test npx playwright test tests-examples/HW_22/new_file.spec.ts --project=chromium-with-setup"
   },
   "keywords": [],
   "author": "",

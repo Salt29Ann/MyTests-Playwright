@@ -146,12 +146,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 21313,
+                  "duration": 22711,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-05T04:28:28.492Z",
+                  "startTime": "2024-05-08T06:57:47.883Z",
                   "attachments": []
                 }
               ],
@@ -186,31 +186,31 @@
                 {
                   "workerIndex": 1,
                   "status": "failed",
-                  "duration": 9740,
+                  "duration": 8734,
                   "error": {
-                    "message": "Error: GET request to https://qauto.forstudy.space/api/cars failed with status 401",
-                    "stack": "Error: GET request to https://qauto.forstudy.space/api/cars failed with status 401\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:10:11",
+                    "message": "TypeError: Failed to parse URL from /api/cars",
+                    "stack": "TypeError: Failed to parse URL from /api/cars\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:7:24",
                     "location": {
                       "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
-                      "column": 11,
-                      "line": 10
+                      "column": 24,
+                      "line": 7
                     },
-                    "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[90m// expect(carsResponse.ok).toBeTruthy();\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcarsResponse\u001b[33m.\u001b[39mok \u001b[33m||\u001b[39m carsResponse\u001b[33m.\u001b[39mstatus \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mconst\u001b[39m pageResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m`${baseURL}/api/cars`\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m"
+                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div.panel-page_heading h1\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"Garage\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m carsResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m'/api/cars'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   expect(carsResponse\u001b[33m.\u001b[39mok)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \u001b[90m//   if (!carsResponse.ok || carsResponse.status !== 200) {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m \u001b[90m//     throw new Error(`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`);\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
-                        "column": 11,
-                        "line": 10
+                        "column": 24,
+                        "line": 7
                       },
-                      "message": "Error: GET request to https://qauto.forstudy.space/api/cars failed with status 401\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[90m// expect(carsResponse.ok).toBeTruthy();\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mcarsResponse\u001b[33m.\u001b[39mok \u001b[33m||\u001b[39m carsResponse\u001b[33m.\u001b[39mstatus \u001b[33m!==\u001b[39m \u001b[35m200\u001b[39m) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mconst\u001b[39m pageResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m`${baseURL}/api/cars`\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:10:11\u001b[22m"
+                      "message": "TypeError: Failed to parse URL from /api/cars\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div.panel-page_heading h1\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"Garage\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m carsResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m'/api/cars'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   expect(carsResponse\u001b[33m.\u001b[39mok)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \u001b[90m//   if (!carsResponse.ok || carsResponse.status !== 200) {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m \u001b[90m//     throw new Error(`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`);\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:7:24\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-05T04:28:54.107Z",
+                  "startTime": "2024-05-08T06:58:13.825Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -230,8 +230,8 @@
                   ],
                   "errorLocation": {
                     "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
-                    "column": 11,
-                    "line": 10
+                    "column": 24,
+                    "line": 7
                   }
                 }
               ],
@@ -248,8 +248,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-05T04:28:27.070Z",
-    "duration": 38441.837999999996,
+    "startTime": "2024-05-08T06:57:46.730Z",
+    "duration": 37525.367,
     "expected": 1,
     "skipped": 0,
     "unexpected": 1,

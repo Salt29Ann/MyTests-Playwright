@@ -146,12 +146,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 22711,
+                  "duration": 19941,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-08T06:57:47.883Z",
+                  "startTime": "2024-05-08T07:04:34.532Z",
                   "attachments": []
                 }
               ],
@@ -166,13 +166,13 @@
       ]
     },
     {
-      "title": "HW_22/additional_file.spec.ts",
-      "file": "HW_22/additional_file.spec.ts",
+      "title": "HW_22/new_file.spec.ts",
+      "file": "HW_22/new_file.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Create user car",
+          "title": "mock response to change user profile",
           "ok": false,
           "tags": [],
           "tests": [
@@ -186,60 +186,60 @@
                 {
                   "workerIndex": 1,
                   "status": "failed",
-                  "duration": 8734,
+                  "duration": 15496,
                   "error": {
-                    "message": "TypeError: Failed to parse URL from /api/cars",
-                    "stack": "TypeError: Failed to parse URL from /api/cars\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:7:24",
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('.profile_name.display-4')\nExpected string: \u001b[32m\"Dav Span\"\u001b[39m\nReceived string: \u001b[31m\"userName userLN\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.profile_name.display-4')\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('.profile_name.display-4')\nExpected string: \u001b[32m\"Dav Span\"\u001b[39m\nReceived string: \u001b[31m\"userName userLN\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.profile_name.display-4')\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\n    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/new_file.spec.ts:17:59",
                     "location": {
-                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
-                      "column": 24,
-                      "line": 7
+                      "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/new_file.spec.ts",
+                      "column": 59,
+                      "line": 17
                     },
-                    "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div.panel-page_heading h1\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"Garage\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m carsResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m'/api/cars'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   expect(carsResponse\u001b[33m.\u001b[39mok)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \u001b[90m//   if (!carsResponse.ok || carsResponse.status !== 200) {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m \u001b[90m//     throw new Error(`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`);\u001b[39m\u001b[0m"
+                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/panel/profile'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.profile_name.display-4'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Dav Span'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ path\u001b[33m:\u001b[39m \u001b[32m'screenshot.png'\u001b[39m\u001b[33m,\u001b[39m fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
-                        "column": 24,
-                        "line": 7
+                        "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/new_file.spec.ts",
+                        "column": 59,
+                        "line": 17
                       },
-                      "message": "TypeError: Failed to parse URL from /api/cars\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"div.panel-page_heading h1\"\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m\"Garage\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m carsResponse \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m fetch(\u001b[32m'/api/cars'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m   expect(carsResponse\u001b[33m.\u001b[39mok)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \u001b[90m//   if (!carsResponse.ok || carsResponse.status !== 200) {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m \u001b[90m//     throw new Error(`GET request to ${baseURL}/api/cars failed with status ${carsResponse.status}`);\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts:7:24\u001b[22m"
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('.profile_name.display-4')\nExpected string: \u001b[32m\"Dav Span\"\u001b[39m\nReceived string: \u001b[31m\"userName userLN\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.profile_name.display-4')\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\u001b[2m  -   locator resolved to <p _ngcontent-ggt-c68=\"\" class=\"profile_name displa…>userName userLN</p>\u001b[22m\n\u001b[2m  -   unexpected value \"userName userLN\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/panel/profile'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.profile_name.display-4'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Dav Span'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ path\u001b[33m:\u001b[39m \u001b[32m'screenshot.png'\u001b[39m\u001b[33m,\u001b[39m fullPage\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/new_file.spec.ts:17:59\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-05-08T06:58:13.825Z",
+                  "startTime": "2024-05-08T07:04:58.560Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-additional_file-Create-user-car-chromium-with-setup/test-failed-1.png"
+                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-new_file-mock-response-to-change-user-profile-chromium-with-setup/test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-additional_file-Create-user-car-chromium-with-setup/video.webm"
+                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-new_file-mock-response-to-change-user-profile-chromium-with-setup/video.webm"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-additional_file-Create-user-car-chromium-with-setup/trace.zip"
+                      "path": "/Users/macuser/Desktop/QA Automation/Playwright Project/test-results/HW_22-new_file-mock-response-to-change-user-profile-chromium-with-setup/trace.zip"
                     }
                   ],
                   "errorLocation": {
-                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/additional_file.spec.ts",
-                    "column": 24,
-                    "line": 7
+                    "file": "/Users/macuser/Desktop/QA Automation/Playwright Project/tests-examples/HW_22/new_file.spec.ts",
+                    "column": 59,
+                    "line": 17
                   }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "d3655dd71329e2b2fb02-20a051afb78e77b633a2",
-          "file": "HW_22/additional_file.spec.ts",
+          "id": "d209186c6bced6e152f4-369c1395eb34c271b68c",
+          "file": "HW_22/new_file.spec.ts",
           "line": 3,
           "column": 5
         }
@@ -248,8 +248,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-05-08T06:57:46.730Z",
-    "duration": 37525.367,
+    "startTime": "2024-05-08T07:04:33.444Z",
+    "duration": 42467.7,
     "expected": 1,
     "skipped": 0,
     "unexpected": 1,

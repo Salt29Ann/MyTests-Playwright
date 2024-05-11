@@ -26,8 +26,9 @@ export default defineConfig({
       password: process.env.HTTP_CREDENTIALS_PASSWORD,  //"welcome2qauto",
     },
     ignoreHTTPSErrors: true,
-    trace: 'on-first-retry',
+    trace: 'retain-on-first-failure', //'on-first-retry',
     screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
     launchOptions: {
       headless: false,
       slowMo: 100

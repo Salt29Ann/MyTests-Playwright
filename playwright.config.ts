@@ -13,18 +13,10 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0, /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 3 : undefined,
   // workers: 4, /* set up of workers doesn't matter which CI*/
-  reporter: [ 
-    ['html', {open: 'never'}], 
-    ['dot'], 
-    ['line'], 
-    ['list'], 
-    ['json', { outputFile: 'results.json' }],   
-    ['@testomatio/reporter/lib/adapter/playwright.js',
-    {
-      apiKey: process.env.TESTOMAT,
-    },], 
-    ['./myReporter.ts'],
-  ],
+  reporter: [ ['html'], ['dot'], ['line'], ['list'], 
+  ['json', { outputFile: 'results.json' }],
+  ['./myReporter.ts'],
+],
 
   use: {
     // baseURL: "https://qauto.forstudy.space",

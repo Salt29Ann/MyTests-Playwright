@@ -3,4 +3,5 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright-report
-/env
+env/
+api-token.json

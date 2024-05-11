@@ -4,7 +4,7 @@ import jsonpath from 'jsonpath';
 
 let userId: Number;
 let id: Number;
-let postId: Number;
+// let postId: Number;
 let title: String;
 let body: String;
 let email: String;

@@ -3,6 +3,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright-report
+api-data.json
 env/
 api-token.json
 api-data.json

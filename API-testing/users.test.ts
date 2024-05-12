@@ -1,45 +1,87 @@
 import axios from "axios";
 import { describe } from "node:test";
-import jsonpath from 'jsonpath';
-import fs from 'fs-extra';
+import jsonData from '../api-data.json'; // read of token 
+import { fakerEN } from "@faker-js/faker";
+import { ApiControllers } from "./controler";
 
-
-let userName: String;
-let userPass:String;
-let authToken:String;
+let fakeUserName = fakerEN.person.firstName();
+let fakeLastName = fakerEN.person.lastName();
+let fakePhoneNumber = fakerEN.phone.number();
 
 describe('Test for users', () => {
-    test('get all users', async () => {
-        const all_users_response = await axios.get('https://dummyjson.com/users');
-        // console.log(all_users_response.data)
-        userName = String(
-            jsonpath.query(all_users_response.data, "$..users[13].username")
-            );
-        userPass = String(
-                jsonpath.query(all_users_response.data, "$..users[13].password")
-            );
-            console.log(userName + " pass: " + userPass);
-        expect(all_users_response.status).toEqual(200);
+
+    const controllers = new ApiControllers();
+    const apiClient = axios.create({
+        baseURL: `${jsonData.baseUrl}`
+    });
+    apiClient.interceptors.request.use(
+        function (config) {
+            console.log(`Request URL: ${config.baseURL}${config.url}`)
+            return config;
+        }
+    )
+
+    test('get current user', async () => {
+        let current_user_data = await apiClient.get(`/user/me`, {
+            headers: {
+            "Authorization": `Bearer ${jsonData.token}`
+            }
+         }).then(function (response) {
+    console.log(response.data)
+    console.log(response.status)
+    console.log(response.statusText)
+        });
     });
 
-    test('get auth token', async () => {
-        const auth_token_response = await axios.post('https://dummyjson.com/auth/login',
+    test('get current user with try/catch', async () => {
+        try {
+        await axios.get(`${jsonData.baseUrl}/useraaaaaa/me`, {
+            headers: {
+            "Authorization": `Bearer ${jsonData.token}`,
+            }
+        }).catch((err) => {
+            if (err.response.status == 404) {
+                throw new Error('Opa 404 error');
+            }
+            throw err;
+        });
+        } catch (err) {
+            console.error(err);
+        }
+    });
+
+    test('get current user with expect', async () => {
+        let responseT = await axios.get(`${jsonData.baseUrl}/userBBB/me`, {
+            headers: {
+            "Authorization": `Bearer ${jsonData.token}`,
+            },
+        });
+    expect(responseT.status).toBe(200);
+    });
+
+    test('PUT user data', async () => {
+//         fetch('https://dummyjson.com/users/1', {
+//   method: 'PUT', /* or PATCH */
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify({
+//   lastName: 'Owais'
+//   })
+// })
+        let put_user = await axios.put(`${jsonData.baseUrl}/users/3`,
             {
-                username: `${userName}`,
-                password: `${userPass}`,
-                expiresInMins: 30,
-                // username: 'kminchelle',
-                // password: '0lelplR',
+                firstName: fakeUserName,
+                lastName: fakeLastName,
+                phone: fakePhoneNumber,
             },
             {
-                headers: {
-                 "Content-Type": "application/json",
+                headers: { 
+                    "Authorization": `Bearer ${jsonData.token}`,
                 },
             }
-        );
-        // console.log(auth_token_response.data)
-        authToken = String(jsonpath.query(auth_token_response.data, "$..token"));
-        // console.log(authToken)
-        fs.writeJSONSync('api-token.json', authToken);
+        )
+    });
+
+    test('user controller', async() => {
+        await controllers.getUserById('4');
     });
 });

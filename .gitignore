@@ -5,3 +5,4 @@ node_modules/
 /playwright-report
 api-data.json
 env/
+api-token.json

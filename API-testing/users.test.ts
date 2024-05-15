@@ -16,17 +16,20 @@ describe('Test for users', () => {
     });
     apiClient.interceptors.request.use(
         function (config) {
+            config.headers.Authorization = `Bearer ${jsonData.token}`
             console.log(`Request URL: ${config.baseURL}${config.url}`)
             return config;
         }
     )
 
     test('get current user', async () => {
-        let current_user_data = await apiClient.get(`/user/me`, {
-            headers: {
-            "Authorization": `Bearer ${jsonData.token}`
-            }
-         }).then(function (response) {
+        let current_user_data = await apiClient.get(`/user/me`, 
+        {
+            // headers: {
+            // "Authorization": `Bearer ${jsonData.token}`
+            // }
+         })
+         .then(function (response) {
     console.log(response.data)
     console.log(response.status)
     console.log(response.statusText)

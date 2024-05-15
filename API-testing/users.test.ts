@@ -38,7 +38,7 @@ describe('Test for users', () => {
 
     test('get current user with try/catch', async () => {
         try {
-        await axios.get(`${jsonData.baseUrl}/useraaaaaa/me`, {
+        await axios.get(`${jsonData.baseUrl}/user/me`, {
             headers: {
             "Authorization": `Bearer ${jsonData.token}`,
             }
@@ -54,7 +54,7 @@ describe('Test for users', () => {
     });
 
     test('get current user with expect', async () => {
-        let responseT = await axios.get(`${jsonData.baseUrl}/userBBB/me`, {
+        let responseT = await axios.get(`${jsonData.baseUrl}/user/me`, {
             headers: {
             "Authorization": `Bearer ${jsonData.token}`,
             },

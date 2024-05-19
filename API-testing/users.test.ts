@@ -16,17 +16,20 @@ describe('Test for users', () => {
     });
     apiClient.interceptors.request.use(
         function (config) {
+            config.headers.Authorization = `Bearer ${jsonData.token}`
             console.log(`Request URL: ${config.baseURL}${config.url}`)
             return config;
         }
     )
 
     test('get current user', async () => {
-        let current_user_data = await apiClient.get(`/user/me`, {
-            headers: {
-            "Authorization": `Bearer ${jsonData.token}`
-            }
-         }).then(function (response) {
+        let current_user_data = await apiClient.get(`/user/me`, 
+        {
+            // headers: {
+            // "Authorization": `Bearer ${jsonData.token}`
+            // }
+         })
+         .then(function (response) {
     console.log(response.data)
     console.log(response.status)
     console.log(response.statusText)
@@ -35,7 +38,7 @@ describe('Test for users', () => {
 
     test('get current user with try/catch', async () => {
         try {
-        await axios.get(`${jsonData.baseUrl}/useraaaaaa/me`, {
+        await axios.get(`${jsonData.baseUrl}/user/me`, {
             headers: {
             "Authorization": `Bearer ${jsonData.token}`,
             }
@@ -51,7 +54,7 @@ describe('Test for users', () => {
     });
 
     test('get current user with expect', async () => {
-        let responseT = await axios.get(`${jsonData.baseUrl}/userBBB/me`, {
+        let responseT = await axios.get(`${jsonData.baseUrl}/user/me`, {
             headers: {
             "Authorization": `Bearer ${jsonData.token}`,
             },

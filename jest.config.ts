@@ -147,6 +147,7 @@ const config: Config = {
 
   // The test environment that will be used for testing
   testEnvironment: "node",
+  reporters: ["default", "jest-html-reporters"], //{ "publicPath": "/API-testing/reports" }],
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
